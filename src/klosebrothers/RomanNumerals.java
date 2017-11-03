@@ -33,7 +33,7 @@ public class RomanNumerals {
 
 			}
 
-			if (i > 0) { // Vorheriger roemische Ziffer wird, falls vorhanden, gesichert
+			if (i > 0) {  // Vorheriger roemische Ziffer wird, falls vorhanden, gesichert
 				prev = Character.toLowerCase(r.charAt(--i));
 			} else {
 				prev = ' ';
