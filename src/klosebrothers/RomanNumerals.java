@@ -5,7 +5,7 @@ public class RomanNumerals {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println( fromRoman("V") + " Test durchlaufen");
+		System.out.println( fromRoman("VIII") + " Test durchlaufen");
 
 	}
 
@@ -24,7 +24,7 @@ public class RomanNumerals {
 
 			if (i < (r.length() - 1)) { // Naechste roemische Ziffer wird, falls vorhanden, gesichert.
 
-				next = Character.toLowerCase(r.charAt(++i));
+				next = Character.toLowerCase(r.charAt(i+ 1));
 			}
 
 			else {
@@ -34,7 +34,7 @@ public class RomanNumerals {
 			}
 
 			if (i > 0) {  // Vorheriger roemische Ziffer wird, falls vorhanden, gesichert
-				prev = Character.toLowerCase(r.charAt(--i));
+				prev = Character.toLowerCase(r.charAt(i - 1));
 			} else {
 				prev = ' ';
 
@@ -99,4 +99,12 @@ public class RomanNumerals {
 		}
 		return a;
 	}
+	
+  public static String toRoman(int a) {
+	  
+	  String r;
+	  
+	  return r;
+	  
+  }
 }
