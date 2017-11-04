@@ -1,9 +1,9 @@
 package klosebrothers;
 
-public class FromRomeToArabic {
+public class FromRomeToArabicI {
 
-	
-	 // Der Methode "fromRoman" wird eine römische Zahl übergeben. Die Zahl wir als arabische Zahl zurück geben.
+	// Der Methode "fromRoman" wird eine römische Zahl übergeben. Die Zahl wir als
+	// arabische Zahl zurück geben.
 	public static int fromRoman(String r) {
 
 		int a = 0; // int a repraesentiert die arabische Zahl, die ermittelt wird.
@@ -26,7 +26,7 @@ public class FromRomeToArabic {
 
 			}
 
-			if (i > 0) {  // Vorheriger roemische Ziffer wird, falls vorhanden, gesichert
+			if (i > 0) { // Vorheriger roemische Ziffer wird, falls vorhanden, gesichert
 				prev = Character.toLowerCase(r.charAt(i - 1));
 			} else {
 				prev = ' ';
@@ -92,5 +92,5 @@ public class FromRomeToArabic {
 		}
 		return a;
 	}
-	
+
 }
