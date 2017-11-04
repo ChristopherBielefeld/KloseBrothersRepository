@@ -8,42 +8,22 @@ public class FromArabicToRome {
 public static String fromArabic (int aUe) {
 	
 	int a = aUe;
-	String r = null;
+	String r = "";
 	
 	while (a > 0) {
-	
-	
 		for (int i = 0; i == values.length; i++) {
-			
-			
-		}
-		
-		
-	}	
-	
+			if(a >= values[i]) {
+				r += strings[i];
+			}	
+		}	
+	}
 	return r;
+	
+	}
 }
 		
-		//Hier war die IF-Abfrage
-var work = num;
-var res = "";
-while ( work > 0 ) {
-for (var i=0; i<_values.length; i++) {
-if ( work >= _values[i] ) {
-if ( _values[i] > 1000 ) {
-res += '<span class="overline">' + _strings[i] + '</span>';
-}
-else {
-res += _strings[i];
-}
-work -= _values[i];
-break;
-}
-}
-}
-$("#results").html( res );
-};
+
 	
 	
 	
-}
+
