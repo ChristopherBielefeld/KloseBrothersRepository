@@ -9,7 +9,6 @@ public class FromArabicToRome {
 	  String[] roman = {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"};
 	  String r = "";
 	  
-	  
 	  for ( int i = arabic.length - 1; a > 0;){
 	    
 	    if (a - arabic[i] >= 0) {
@@ -18,9 +17,6 @@ public class FromArabicToRome {
 	    }
 	    else
 	      i--;
-	    
-	  
-	  
 	  }
 	  return r;
 	}

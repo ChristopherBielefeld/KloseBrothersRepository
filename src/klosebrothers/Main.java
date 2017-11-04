@@ -6,6 +6,6 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		System.out.println(FromRomeToArabicI.fromRoman("VIII") + " Test durchlaufen");
-		System.out.println(FromArabicToRome.fromArabic(1) + " Test zwei durchlaufen");
+		System.out.println(FromArabicToRome.fromArabic(999) + " Test zwei durchlaufen");
 	}
 }
