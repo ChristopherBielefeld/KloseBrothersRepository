@@ -9,7 +9,7 @@ import javax.swing.*;
 
 public class GUI {
 	GUI(){
-	JFrame frame = new JFrame ("test");
+	JFrame frame = new JFrame ("Roman Numerals");
     frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
     frame.setPreferredSize (new Dimension(500,500));
    
@@ -27,6 +27,13 @@ public class GUI {
        {
           System.out.println ("Pressed");
           System.out.println (field1.getText ());
+          if (FromArabicToRome.isInteger(field1.getText())) {
+        	  
+        	  field1.setText(FromArabicToRome.fromArabic(Integer.parseInt(field1.getText())));
+          }
+          
+          else
+          field1.setText(Integer.toString(FromRomeToArabicII.convert((field1.getText ()))));
        }
     });
     frame.getContentPane ().add (button);
