@@ -36,10 +36,17 @@ public class GUI {
         		  field1.setText("Bitte nur positive Zahlen eineben");
           }
           
-          else
-          field1.setText(Integer.toString(FromRomeToArabicII.convert((e1))));
+          else {
+        	  if (FromRomeToArabicII.convert((e1)) == -1) {
+        		  field1.setText("Bitte machen Sie keine leere Eingabe und geben Sie nur valide römische Zahlen ein!");  
+        	  }
+        	  else {
+        		  field1.setText(Integer.toString(FromRomeToArabicII.convert((e1))));
+        	  }
+          }
        }
     });
+    
     frame.getContentPane ().add (button);
     frame.pack ();
     frame.setVisible (true);
