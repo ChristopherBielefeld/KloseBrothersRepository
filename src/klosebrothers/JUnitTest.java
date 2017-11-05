@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class JUnitTest {
 
-	//Tests von arabisch in roemisch
+	//Tests fuer beide Wege
     @Test
     public void twoThousandNineHundredAndNinetyNine() {
         assertRomanNumeralEquals("MMCMXCIX", 2999);
@@ -111,7 +111,7 @@ public class JUnitTest {
 	public void thirtyNine() {
 		assertRomanNumeralEquals("XXXIX", 39);
 	}
-
+	//Testet FromArabicToRome.fromArabic(arab), FromRomeToArabicI.fromRoman(roman), FromRomeToArabicII.convert(roman) gleichzeitig.
     private static void assertRomanNumeralEquals(String roman, int arab) {
         assertThat(roman, is(FromArabicToRome.fromArabic(arab)));
         assertEquals(arab, FromRomeToArabicI.fromRoman(roman));

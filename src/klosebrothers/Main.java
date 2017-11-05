@@ -7,5 +7,6 @@ public class Main {
 
 		System.out.println(FromRomeToArabicI.fromRoman("VIII") + " Test durchlaufen");
 		System.out.println(FromArabicToRome.fromArabic(999) + " Test zwei durchlaufen");
+		GUI gui = new GUI();
 	}
 }
