@@ -27,13 +27,17 @@ public class GUI {
        {
           System.out.println ("Pressed");
           System.out.println (field1.getText ());
-          if (FromArabicToRome.isInteger(field1.getText())) {
-        	  
-        	  field1.setText(FromArabicToRome.fromArabic(Integer.parseInt(field1.getText())));
+          String e1 = field1.getText();
+          if (FromArabicToRome.isInteger(e1)) {
+        	  if(Integer.parseInt(e1) > 0) {
+        	 field1.setText(FromArabicToRome.fromArabic(Integer.parseInt(e1)));
+        	  }
+        	  else
+        		  field1.setText("Bitte nur positive Zahlen eineben");
           }
           
           else
-          field1.setText(Integer.toString(FromRomeToArabicII.convert((field1.getText ()))));
+          field1.setText(Integer.toString(FromRomeToArabicII.convert((e1))));
        }
     });
     frame.getContentPane ().add (button);
