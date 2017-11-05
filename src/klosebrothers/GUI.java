@@ -27,7 +27,7 @@ public class GUI {
        {
           System.out.println ("Pressed");
           System.out.println (field1.getText ());
-          String e1 = field1.getText();
+          String e1 = field1.getText().toUpperCase();
           if (FromArabicToRome.isInteger(e1)) {
         	  if(Integer.parseInt(e1) > 0) {
         	 field1.setText(FromArabicToRome.fromArabic(Integer.parseInt(e1)));
